@@ -1,0 +1,56 @@
+# SetHome Plugin Translations
+# You can customize all messages here using MiniMessage format
+# MiniMessage documentation: https://docs.adventure.kyori.net/minimessage/format.html
+# Common tags: <red>, <green>, <yellow>, <blue>, <gold>, <gray>, <dark_gray>, <white>
+# Formatting: <bold>, <italic>, <underlined>, <strikethrough>, <obfuscated>
+# Colors: <color:#RRGGBB> for custom colors
+# Examples:
+#   <green>Success!</green>
+#   <red><bold>Error:</bold> Something went wrong</red>
+#   <yellow>Warning: <gray>This is a warning message</gray></yellow>
+
+# General messages
+error-player-only: <red>This command can only be used by players</red>
+error-no-permission: <red>You do not have permission to use this command</red>
+error-invalid-arguments: <red>You must enter a name for your home</red>
+error-home-not-found: <red>You have no home with that name</red>
+error-home-name-invalid: <red>Home names cannot contain '.'</red>
+
+# SetHome command messages
+sethome-success: <green>You have created a home with the name, <yellow>{name}</yellow></green>
+sethome-already-exists: <red>You already have a home with that name</red>
+sethome-max-homes: <red>You can't have more than <yellow>{max}</yellow> homes</red>
+
+# DelHome command messages
+delhome-success: <green>You have removed your home with the name, <yellow>{name}</yellow></green>
+
+# Home command messages
+home-teleport-cooldown: <yellow>{seconds} seconds left to teleport</yellow>
+home-teleport-canceled: <red>Teleportation canceled!</red>
+home-teleport-success: <green>You have teleported to your home with the name, <yellow>{name}</yellow></green>
+
+# AdminDelHome command messages
+admindelhome-usage: '<red>Usage: /admindelhome <player> <home></red>'
+admindelhome-player-not-found: <red>Player '<yellow>{player}</yellow>' not found or
+  has never played before</red>
+admindelhome-success: <green>Successfully deleted home '<yellow>{home}</yellow>' from
+  player '<yellow>{player}</yellow>'</green>
+admindelhome-no-homes: <red>Player '<yellow>{player}</yellow>' has no homes</red>
+admindelhome-home-not-found: <red>Player '<yellow>{player}</yellow>' does not have
+  a home named '<yellow>{home}</yellow>'</red>
+
+# AdminListHomes command messages
+adminlisthomes-usage: '<red>Usage: /adminlisthomes player</red>'
+adminlisthomes-player-not-found: <red>Player '<yellow>{player}</yellow>' not found
+  or has never played before</red>
+adminlisthomes-no-homes: <red>Player '<yellow>{player}</yellow>' has no homes</red>
+adminlisthomes-header: <green>=== Homes for <yellow>{player}</yellow> (<yellow>{count}</yellow>
+  total) ===</green>
+adminlisthomes-entry: '<gray>- <yellow>{name}</yellow>: <white>{world}</white> <gray>|</gray>
+  <blue>X: {x}</blue> <gray>|</gray> <blue>Y: {y}</blue> <gray>|</gray> <blue>Z: {z}</blue></gray>'
+
+# ListHomes command messages
+listhomes-no-homes: <red>You do not have any homes set</red>
+listhomes-header: <green>=== Your Homes (<yellow>{count}</yellow> total) ===</green>
+listhomes-entry: '<gray>- <yellow>{name}</yellow>: <white>{world}</white> <gray>|</gray>
+  <blue>X: {x}</blue> <gray>|</gray> <blue>Y: {y}</blue> <gray>|</gray> <blue>Z: {z}</blue></gray>'

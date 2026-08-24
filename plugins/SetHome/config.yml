@@ -1,0 +1,18 @@
+# Cooldown is the number of seconds the player must wait before they can teleport to a home
+cooldown: 0
+
+# Max homes is the maximum number of homes the player can have.
+# Default is for every player, but you can add for ranks as well.
+# The permission is then: homeplugin.limit.<rank>
+max-homes:
+  default: 15
+#  vip: 5
+#  premium: 10
+#  admin: 50
+
+# Cancel on move is a setting that determines whether teleportation should be canceled if the player moves while on cooldown
+cancel-on-move: false
+
+# Play sound determines whether to play the enderman teleport sound when teleporting to a home
+play-sound: true
+

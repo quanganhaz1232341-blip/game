@@ -1,0 +1,16 @@
+0175d02d-1632-352e-b57c-8ab4c96dd1f0:
+  ==: org.bukkit.Location
+  world_key: minecraft:overworld
+  x: 320.0964751860036
+  y: -19.9375
+  z: 463.443856001087
+  pitch: 20.999958
+  yaw: 166.96118
+4a99122c-5055-3757-b68a-f241cf197d47:
+  ==: org.bukkit.Location
+  world_key: minecraft:overworld
+  x: 274.47537659941804
+  y: 68.0
+  z: 326.287765723385
+  pitch: 15.130948
+  yaw: -89.58008

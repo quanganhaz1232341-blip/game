@@ -1,0 +1,3 @@
+trees:
+  sound: "minecraft:entity.experience_orb.pickup" #If you want to remove the sound, leave this box blank
+reload_message: "&aᴄᴏɴꜰɪɢ ѕᴜᴄᴄᴇѕѕꜰᴜʟʟʏ ʀᴇʟᴏᴀᴅᴇᴅ"

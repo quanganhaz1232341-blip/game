@@ -1,0 +1,97 @@
+settings:
+  tpa_cooldown: 30 # Cooldown in Seconds, before a Player can send another TPA-Request.
+  tpa_request_timeout: 60 # Time in Seconds, until a TPA-Request runs out.
+  check_for_updates: true # Checks Modrinth every 12 hours for a new version.
+  modrinth_project_slug: "simpletpaplugin" # Modrinth project slug used for update notifications. Usually there's no need to change this.
+  use_placeholderapi_formatting: true # Formats Player names in messages using PlaceholderAPI. Requires PlaceholderAPI to be installed.
+  player_display_format: "%player%" # Format for Player names in messages. Legacy § codes and MiniMessage tags (e.g. from %luckperms_prefix%) are automatically translated so they can be mixed safely. Example: "%luckperms_prefix% | %player%" requires PlaceholderAPI and LuckPerms, as well as the LuckPerms PlaceholderAPI expansion, to be installed.
+  teleport_warmup_enabled: false # If enabled, the requester has to stand still for a configured amount of time before being teleported after their TPA-Request gets accepted.
+  teleport_warmup_seconds: 5 # Time in Seconds the requester has to stand still before being teleported. Only used if teleport_warmup_enabled is true.
+  allow_multiple_requests: true # If enabled, Players can send TPA-Requests to multiple different Players at the same time, and receive multiple incoming Requests at once.
+  suppress_usage_hint: true # If enabled, suppresses the server's built-in "/tpa <player|version|help>" usage hint that would otherwise appear below SimpleTPA's own error messages.
+  tpahere_enabled: true # If enabled, allows Players to use /tpahere to ask another Player to teleport to them.
+  tpahere_cooldown: 30 # Cooldown in Seconds, before a Player can send another TPA-Here-Request. Shares the same default as tpa_cooldown but can be changed independently.
+  tpahere_request_timeout: 60 # Time in Seconds, until a TPA-Here-Request runs out. Shares the same default as tpa_request_timeout but can be changed independently.
+  tpo_enabled: true # If enabled, allows staff to use /tpo to teleport to an offline Player's last known location. Also controls whether logout locations are recorded at all.
+sounds:
+  tpa_request_sent: "entity.experience_orb.pickup"
+  tpa_request_received: "entity.player.levelup"
+  tpa_accept: "entity.enderman.teleport"
+  tpa_deny: "entity.villager.no"
+  tpa_expired: "entity.item.break"
+  tpa_toggle_enabled: "block.note_block.bass"
+  tpa_toggle_disabled: "block.note_block.pling"
+  tpa_teleport_cancelled: "entity.villager.no"
+  tpahere_request_sent: "entity.experience_orb.pickup"
+  tpahere_request_received: "entity.player.levelup"
+messages: # Uses MiniMessage tags (e.g. <green>, <gradient:blue:aqua>, <hover:show_text:'...'>) in this file. Legacy § codes also work and are automatically translated internally if you prefer them. update_available_console is only ever printed to the console log and does not support any coloring.
+  tpa_request_sent: "<gray>You sent a TPA-Request to <gold>%target%</gold>."
+  tpa_request_received: "<gold>%player%</gold> <gray>sent you a TPA-Request! <green>/tpaccept</green> <gray>or <red>/tpdeny</red>"
+  tpahere_request_sent: "<gray>You sent a TPA-Request asking <gold>%target%</gold> to teleport to you."
+  tpahere_request_received: "<gold>%player%</gold> <gray>sent a TPA-Request asking you to teleport to them! <green>/tpaccept</green> <gray>or <red>/tpdeny</red>"
+  tpahere_disabled: "<red>The /tpahere command is currently disabled."
+  tpa_accept_success: "<green>You accepted the TPA-Request from <gold>%player%</gold>."
+  tpa_accept_teleport: "<green>You got teleported by <gold>%player%</gold>."
+  tpa_teleport_warmup_started: "<yellow>Teleporting to <gold>%player%</gold> in <gold>%seconds%</gold> seconds. <red>Don't move!"
+  tpa_teleport_warmup_cancelled: "<red>Teleportation to <gold>%player%</gold> was cancelled because you moved."
+  tpa_deny_success: "<red>You denied the TPA-Request from <gold>%player%</gold>."
+  tpa_deny_notify: "<gold>%player%</gold> <red>denied your TPA-Request."
+  tpa_no_request: "<gray>You dont have any pending TPA-Requests."
+  tpa_request_exists: "<gray>You already have a pending TPA-Request. Wait for it to be accepted, denied, or to expire before sending another."
+  tpa_request_exists_target: "<gray>You already have a pending TPA-Request to this Player."
+  tpa_no_request_from: "<gray>You don't have a pending TPA-Request from <gold>%player%</gold>."
+  tpa_no_request_to: "<gray>You don't have a pending TPA-Request to <gold>%player%</gold>."
+  tpa_multiple_requests: "<gray>You have multiple pending TPA-Requests: <gold>%players%</gold>. Use <green>/tpaccept</green> [player] or <red>/tpdeny</red> [player] to choose one."
+  tpa_multiple_requests_outgoing: "<gray>You have multiple pending outgoing TPA-Requests: <gold>%players%</gold>. Use <yellow>/tpacancel</yellow> [player] to choose one."
+  player_not_online: "<red>This Player is currently not online."
+  player_only_command: "<red>This command can only be used by Players."
+  tpa_self_request: "<red>You cannot send a TPA-Request to yourself."
+  wrong_usage: "<gray>Use: <yellow>/%command%</yellow> [Player]"
+  tpa_cancel_success: "<red>Your TPA-Request was cancelled."
+  tpa_cancel_notify: "<gold>%player%</gold> <gray>cancelled their TPA-Request."
+  tpa_request_expired_sender: "<gray>Your TPA-Request to <gold>%target%</gold> ran out."
+  tpa_request_expired_receiver: "<gray>The TPA-Request by <gold>%player%</gold> ran out."
+  tpahere_request_expired_sender: "<gray>Your TPA-Request asking <gold>%target%</gold> to teleport to you ran out."
+  tpahere_request_expired_receiver: "<gray>The TPA-Request by <gold>%player%</gold> asking you to teleport to them ran out."
+  tpa_cooldown: "<yellow>Please wait <gold>%seconds%</gold> Seconds, before sending a new TPA-Request."
+  config_reloaded: "<green>The Configuration has succesfully been reloaded."
+  no_permission: "<red>You dont have the required Permissions to use this Command.!"
+  tpa_toggle_enabled: "<red>You will no longer receive TPA-Requests."
+  tpa_toggle_disabled: "<green>You can now receive TPA-Requests again."
+  tpa_target_not_accepting: "<gold>%target%</gold> <red>is not currently accepting TPA-Requests."
+  version_info: "<gray>SimpleTPA version info - Current: <gold>%current%</gold> | Latest: <gold>%latest%</gold> | <aqua>%url%"
+  update_available_console: "A new version (%version%) of SimpleTPA is available! Download: %url%"
+  update_available_player: "<yellow>A new version (<gold>%version%</gold>) of SimpleTPA is available! <white>Download: <aqua>%url%"
+  tpa_debug_enabled: "<green>TPA event debug logging is now enabled.</green>"
+  tpa_debug_disabled: "<gray>TPA event debug logging is now disabled.</gray>"
+  tphere_success: "<green>You teleported <gold>%player%</gold> to you."
+  tphere_moved_notify: "<yellow>You were teleported to <gold>%player%</gold>."
+  tpo_disabled: "<red>The /tpo command is currently disabled."
+  tpo_player_online: "<gold>%player%</gold> <red>is currently online, use /tpahere or /tpa instead."
+  tpo_no_data: "<red>No last known location is available for <gold>%player%</gold>."
+  tpo_success: "<green>Teleported to <gold>%player%</gold>'s last known location."
+
+clickable_messages:
+  accept_text: "[✔ Accept]"
+  accept_hover: "Click to accept the TPA!"
+  accept_command: "/tpaccept"
+  accept_color: "GREEN"
+
+  deny_text: "[✖ Deny]"
+  deny_hover: "Click to deny the TPA!"
+  deny_command: "/tpdeny"
+  deny_color: "RED"
+
+help_messages:
+  header: "<gold>--- SimpleTPA Commands ---"
+  tpa: "<yellow>/tpa</yellow> <gray>[player] - Sends a TPA-Request to a Player."
+  tpahere: "<yellow>/tpahere</yellow> <gray>[player] - Asks a Player to teleport to you."
+  tpaccept: "<green>/tpaccept</green> <gray>[player] - Accepts a pending TPA-Request. Specify a Player if you have multiple."
+  tpdeny: "<red>/tpdeny</red> <gray>[player] - Denies a pending TPA-Request. Specify a Player if you have multiple."
+  tpacancel: "<yellow>/tpacancel</yellow> <gray>[player] - Cancels one of your pending outgoing TPA-Requests."
+  tpatoggle: "<yellow>/tpatoggle</yellow> <gray>- Toggles whether you can receive TPA-Requests."
+  tphere: "<yellow>/tphere</yellow> <gray>[player] - Force-teleports a Player to you. (Staff)"
+  tpo: "<yellow>/tpo</yellow> <gray>[player] - Teleports you to an offline Player's last known location. (Staff)"
+  version: "<yellow>/tpa version</yellow> <gray>- Shows the current plugin version and update status."
+  help: "<yellow>/tpa help</yellow> <gray>- Shows this help message."
+  tpreload: "<yellow>/tpreload</yellow> <gray>- Reloads the plugin configuration."
