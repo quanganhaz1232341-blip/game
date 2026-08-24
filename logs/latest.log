@@ -1,0 +1,105 @@
+[10:26:22] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.2+10-LTS; Microsoft Microsoft-13053558) on Linux 6.8.0-1052-azure (amd64)
+[10:26:22] [ServerMain/INFO]: [bootstrap] Loading Paper 26.2-112-main@c9e894d (2026-08-11T05:18:39Z) for Minecraft 26.2
+[10:26:22] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[10:26:22] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
+[10:26:22] [ServerMain/INFO]: [PluginInitializerManager] Initialized 11 plugins
+[10:26:22] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (1):
+ - Veinminer (2.12.0)
+[10:26:22] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (10):
+ - AxGraves (1.29.0), Chunky (1.5.3), FallingTrees (1.0.0), GSit (3.5.1), SetHome (6.3), SimpleTPA (1.6), TradeCycle (2.1.0), ViaBackwards (5.11.0), ViaVersion (5.11.0), VillagerInABukkit (1.6.1)
+[10:26:27] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[10:26:27] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[10:26:27] [DataConverter MCTypeRegistry init thread/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 713.0ms
+[10:26:30] [ServerMain/INFO]: Loaded 1585 recipes
+[10:26:30] [ServerMain/INFO]: Loaded 1688 advancements
+[10:26:30] [Server thread/INFO]: Starting minecraft server version 26.2
+[10:26:30] [Server thread/INFO]: Loading properties
+[10:26:30] [Server thread/INFO]: This server is running Paper version 26.2-112-main@c9e894d (2026-08-11T05:18:39Z) (Implementing API version 26.2.build.112-stable)
+[10:26:30] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[10:26:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:26:30] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:26:30] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[10:26:30] [Server thread/INFO]: Default game type: SURVIVAL
+[10:26:30] [Server thread/INFO]: Generating keypair
+[10:26:30] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:26:31] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[10:26:31] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[10:26:31] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.11.0
+[10:26:31] [Server thread/INFO]: [ViaVersion] ViaVersion 5.11.0 is now loaded. Registering protocol transformers and injecting...
+[10:26:32] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[10:26:32] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[10:26:33] [Server thread/INFO]: [FallingTrees] Loading server plugin FallingTrees v1.0.0
+[10:26:33] [Server thread/INFO]: [VillagerInABukkit] Loading server plugin VillagerInABukkit v1.6.1
+[10:26:33] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.11.0
+[10:26:33] [Server thread/INFO]: [AxGraves] Loading server plugin AxGraves v1.29.0
+[10:26:33] [Server thread/INFO]: [SimpleTPA] Loading server plugin SimpleTPA v1.6
+[10:26:33] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.5.3
+[10:26:33] [Server thread/INFO]: [GSit] Loading server plugin GSit v3.5.1
+[10:26:33] [Server thread/INFO]: [TradeCycle] Loading server plugin TradeCycle v2.1.0
+[10:26:33] [Server thread/INFO]: [Veinminer] Loading server plugin Veinminer v2.12.0
+[10:26:33] [Server thread/INFO]: [Veinminer] Detected platform: Paper
+[10:26:33] [Server thread/INFO]: [SetHome] Loading server plugin SetHome v6.3
+[10:26:33] [Server thread/INFO]: [Veinminer] Enabling Veinminer v2.12.0
+[10:26:33] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:26:33] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:26:33] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:26:33] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:26:33] [Server thread/INFO]: Preparing level "world"
+[10:26:33] [DefaultDispatcher-worker-2/INFO]: [de.miraculixx.veinminer.Veinminer] veinminer is up to date
+[10:26:33] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:overworld'...
+[10:26:33] [Server thread/INFO]: Preparing spawn area: 100%
+[10:26:33] [Server thread/INFO]: Prepared spawn area in 6 ms
+[10:26:33] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_nether'...
+[10:26:33] [Server thread/INFO]: Prepared spawn area in 0 ms
+[10:26:33] [Server thread/INFO]: Loading 0 persistent chunks for level 'minecraft:the_end'...
+[10:26:33] [Server thread/INFO]: Prepared spawn area in 0 ms
+[10:26:33] [Server thread/INFO]: Done preparing level "world" (0.505s)
+[10:26:33] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.11.0
+[10:26:33] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 26.2 (776)
+[10:26:33] [Server thread/INFO]: [FallingTrees] Enabling FallingTrees v1.0.0
+[10:26:33] [Server thread/INFO]:   _____     _ _ _            _____                   
+[10:26:33] [Server thread/INFO]:  |  ___|_ _| | (_)_ __   __ |_   _| __ ___  ___  ___ 
+[10:26:33] [Server thread/INFO]:  | |_ / _` | | | | '_ \ / _` || || '__/ _ \/ _ \/ __|
+[10:26:33] [Server thread/INFO]:  |  _| (_| | | | | | | | (_| || || | |  __/  __/\__ \
+[10:26:33] [Server thread/INFO]:  |_|  \__,_|_|_|_|_| |_|\__, ||_||_|  \___|\___||___/
+[10:26:33] [Server thread/INFO]:                         |___/                        
+[10:26:33] [Server thread/INFO]: Author: @FlintTV
+[10:26:33] [Server thread/INFO]: Version: 1.0.1
+[10:26:33] [Server thread/INFO]: Plugin: ENABLED
+[10:26:33] [Server thread/INFO]: [VillagerInABukkit] Enabling VillagerInABukkit v1.6.1
+[10:26:33] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.11.0
+[10:26:33] [Server thread/INFO]: [AxGraves] Enabling AxGraves v1.29.0
+[10:26:34] [Server thread/INFO]: [SimpleTPA] Enabling SimpleTPA v1.6
+[10:26:34] [Server thread/INFO]: [SimpleTPA] Loading existing config.yml and applying missing defaults...
+[10:26:34] [Server thread/INFO]: [SimpleTPA] config.yml is up to date.
+[10:26:34] [Server thread/INFO]: [SimpleTPA] SimpleTPA Activated!
+[10:26:34] [Server thread/INFO]: [Chunky] Enabling Chunky v1.5.3
+[10:26:34] [Server thread/INFO]: [GSit] Enabling GSit v3.5.1
+[10:26:34] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[10:26:34] [Server thread/INFO]: [TradeCycle] Enabling TradeCycle v2.1.0
+[10:26:34] [Server thread/INFO]: [SetHome] Enabling SetHome v6.3
+[10:26:35] [Server thread/INFO]: [spark] Starting background profiler...
+[10:26:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[10:26:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[10:26:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[10:26:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[10:26:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10:26:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10:26:35] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[10:26:35] [Server thread/INFO]: Running delayed init tasks
+[10:26:35] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[10:26:35] [Server thread/INFO]: [de.miraculixx.veinminer.Veinminer] All events enabled!
+[10:26:35] [Server thread/INFO]: Done (14.971s)! For help, type "help"
+[10:26:51] [User Authenticator #0/INFO]: UUID of player quanganhaz12 is 4a99122c-5055-3757-b68a-f241cf197d47
+[10:26:55] [Server thread/INFO]: quanganhaz12 joined the game
+[10:26:55] [Server thread/INFO]: quanganhaz12[/127.138.80.64:58043] logged in with entity id 107 at ([minecraft:overworld]280.14262275369896, 64.5, 353.28823248500373)
+[10:41:34] [Server thread/INFO]: quanganhaz12 lost connection: Disconnected
+[10:41:34] [Server thread/INFO]: quanganhaz12 left the game
+[10:44:00] [User Authenticator #1/INFO]: UUID of player quanganhaz12 is 4a99122c-5055-3757-b68a-f241cf197d47
+[10:44:01] [Server thread/INFO]: quanganhaz12 joined the game
+[10:44:01] [Server thread/INFO]: quanganhaz12[/127.138.80.64:38799] logged in with entity id 2493 at ([minecraft:overworld]282.1972113507354, 70.0, 332.8020508440342)
+[11:21:24] [Server thread/INFO]: quanganhaz12 lost connection: Disconnected
+[11:21:24] [Server thread/INFO]: quanganhaz12 left the game
+[11:22:21] [User Authenticator #2/INFO]: UUID of player quanganhaz12 is 4a99122c-5055-3757-b68a-f241cf197d47
+[11:22:22] [Server thread/INFO]: quanganhaz12 joined the game
+[11:22:22] [Server thread/INFO]: quanganhaz12[/127.138.80.64:51341] logged in with entity id 7776 at ([minecraft:overworld]274.47537659941804, 68.0, 326.287765723385)

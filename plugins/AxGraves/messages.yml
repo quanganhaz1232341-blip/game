@@ -1,0 +1,48 @@
+hologram:
+- '&#FF0000☠ &#FF0000&l%player% &#FF0000☠'
+- '&#00CC00⌛ &#00FF00%despawn-time% &#00CC00⌛'
+- '&#00AAFF%item% &fɪᴛᴇᴍ &8| &#00AAFF%xp% &fxᴘ'
+
+help:
+- ' '
+- <gradient:#FF00FF:#DD00FF><b>AxGraves</b></gradient> <#FF55FF>Help
+- ' <#FF55FF>➤ <white>/axgraves reload <#DDDDDD>| <#FFAAFF>Reload plugin'
+- ' <#FF55FF>➤ <white>/axgraves list <#DDDDDD>| <#FFAAFF>List spawned graves'
+- ' <#FF55FF>➤ <white>/axgraves tp <#DDDDDD>| <#FFAAFF>Teleport to last grave'
+- ' '
+
+gui-name: '&0%player%''s Grave'
+
+# if you restart the server, sometimes the server can't find the owner's name, this will be used for it
+unknown-player: Unknown
+
+reload:
+  success: '&#33FF33Plugin successfully reloaded!'
+  failed: '&#FF3333Failed to reload the plugin! Something is wrong in the &f%file%&#FF3333 file, look in the console or use a yaml validator to fix the errors!'
+
+interact:
+  not-your-grave: '&#FFAAFFYou can only open your own grave!'
+
+death-message:
+  enabled: false
+  message: '&#FFAAAAYou have died at &f%world% %x%, %y%, %z%&#FFAAAA!'
+
+grave-list:
+  header: '&#FF00FF&l=== GRAVES ==='
+  grave: '&#FF00FF[TP] &#FFAAFF%player% &7- &#FFAAFF%world% %x%, %y%, %z% &7(%time%)'
+  no-graves: '&#FFAAFFNo graves found!'
+
+commands:
+  invalid-value: '&#FF0000Invalid parameter: &#BB0000%value%'
+  invalid-command: '&#FF0000Invalid command or subcommand!'
+  missing-argument: '&#FF0000Missing argument! You must specify a value for &#BB0000%value%&#FF0000.'
+  no-permission: '&#FF0000You don''t have permission to access this command!'
+  out-of-range: '&#FF0000The &#BB0000%number% &#FF0000must be between &#BB0000%min% &#FF0000and &#BB0000%max%&#FF0000!'
+  player-only: '&#FF0000You must be a player to use this command!'
+  invalid-player: '&#FF0000The player &#BB0000%player% &#FF0000can not be found!'
+  invalid-selector: '&#FF0000You can not use this selector in this command!'
+
+update-notifier: '&#FF88FFThere is a new version of AxGraves available! &#DDDDDD(&#FFFFFFcurrent: &#FF0000%current% &#DDDDDD| &#FFFFFFlatest: &#00FF00%latest%&#DDDDDD)'
+
+# do not edit
+version: 6

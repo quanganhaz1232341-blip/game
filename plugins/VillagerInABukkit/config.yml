@@ -1,0 +1,30 @@
+# Should the dispenser be able to pick up or place these villager types. Since players use permissions to determine this
+# a config option is used here
+dispenser:
+  villager:
+    pickup: true
+    place: true
+  wandering-trader:
+    pickup: true
+    place: true
+  zombie-villager:
+    pickup: true
+    place: true
+
+# Should the server ask the client to download a resource pack when they join
+resource-pack: true
+
+# The below options are commented out so that it uses the right resourcepack version for the minecraft/plugin version by default
+# If you want to override it/manually use an updated resourcepack you can uncomment and override them
+
+# The URL to download the resource pack from
+#resource-pack-url: "https://cdn.modrinth.com/data/9tf9GGch/versions/ZBgqIN0Y/VillagerInABukkitPack.zip"
+# The SHA-1 hash of the resource pack ZIP
+#resource-pack-hash: "f2d4dd5bf8ee221234b738236099b2592c58b8e8"
+# The ID for the resource pack. Please do not touch unless you know what you are doing
+#resource-pack-id: "68a4b411-e409-4d89-b563-66049ba4914b"
+
+# Should any villager placing and picking up be logged to the console
+console-logging: false
+# Should any villager placing and picking up be logged to a file
+file-logging: false
